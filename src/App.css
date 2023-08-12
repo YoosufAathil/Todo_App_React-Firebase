@@ -1,0 +1,98 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.App {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Sidebar {
+    width: 300px;
+    min-width: 210px;
+    height: 100%;
+}
+
+.Main {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(./components/Images/bg.png);
+}
+
+.User {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ebebeb;
+    padding: 1rem;
+}
+
+.User .logo img{
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.User .info p{
+    font-size: 1.1 rem;
+    font-weight: bold;
+
+}
+
+.User .info a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.Modal .container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    background: white;
+}
+
+.AddNewToDo {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.AddNewToDo .btn {
+    padding: 1rem;
+    width: 100%;
+    height: 70px;
+}
+
+.AddNewToDo .btn button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    background: #5D8818;
+    color: white;
+    font-weight: bold;
+}
+
+.AddNewToDo .btn button:hover{
+    filter: brightness(1.5);
+    transition: all 300ms ease;
+}
